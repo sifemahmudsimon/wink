@@ -5,7 +5,9 @@ import Image from "next/image";
 const ShopGallery = () => {
   return (
     <div className="pt-[46px] pb-[96px]">
-      <SectionTitle />
+      <SectionTitle 
+      title='Shop All' 
+      subtitle='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'/>
       <div className="flex gap-[16px] justify-center w-[100%]">
         {[...Array(4)].map((data, index) => (
           <div key={index} className="relative w-[302px] h-[445px]">
@@ -14,7 +16,7 @@ const ShopGallery = () => {
               fill
               objectFit="cover"
               objectPosition="center"
-              alt={`Image ${index + 1}`}
+              alt={`Image`}
             />
           </div>
         ))}

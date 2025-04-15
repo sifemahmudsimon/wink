@@ -15,6 +15,10 @@ import SaleTimerBanner from "@/components/PageWiseComponent/HomePage/SaleTimerBa
 import NewsLetter from "@/components/PageWiseComponent/HomePage/NewsLetter";
 import FeaturedProducts from "@/components/PageWiseComponent/HomePage/FeaturedProducts";
 import ShopGallery from "@/components/PageWiseComponent/HomePage/ShopGallery";
+import FeatureVideo from "@/components/PageWiseComponent/HomePage/FeatureVideo";
+import OfferBanner from "@/components/PageWiseComponent/HomePage/OfferBanner";
+import ProductAvailablity from "@/components/PageWiseComponent/HomePage/ProductAvailablity";
+import OurStory from "@/components/PageWiseComponent/HomePage/OurStory";
 
 
 export default async function Home() {
@@ -25,6 +29,10 @@ export default async function Home() {
     <>
     <HeroBanner/>
     <SaleTimerBanner/>
+    <OfferBanner/>
+    <ProductAvailablity/>
+    <OurStory/>
+    <FeatureVideo/>
     <FeaturedProducts/>
     <ShopGallery/>
     <NewsLetter/>

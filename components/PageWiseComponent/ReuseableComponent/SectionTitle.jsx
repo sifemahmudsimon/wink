@@ -1,11 +1,11 @@
 import React from 'react'
 
-const SectionTitle = () => {
+const SectionTitle = ({title,subtitle}) => {
   return (
-    <div className='text-center mx-auto max-w-[746px] py-[40px]'>
-      <h1 className='font-medium text-[50px] leading-[100%] mb-[26px]'>Shop All</h1>
+    <div className='text-center mx-auto py-[40px]'>
+      <h1 className='font-medium text-[50px] leading-[100%] mb-[26px]'>{title}</h1>
       <p className='h-[48px] leading-[100%]'>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+      {subtitle}
       </p>
     </div>
   )

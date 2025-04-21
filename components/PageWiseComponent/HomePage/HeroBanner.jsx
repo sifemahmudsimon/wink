@@ -1,5 +1,5 @@
-import { Button } from '@heroui/button'
-import React from 'react'
+import { Button } from "@heroui/button"
+import React from "react"
 
 const HeroBanner = () => {
   return (

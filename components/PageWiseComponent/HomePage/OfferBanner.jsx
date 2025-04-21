@@ -27,7 +27,7 @@ const OfferBanner = () => {
         </h1>
         <p className="mb-[63px] max-w-[746px]">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          industry. Lorem Ipsum has been the industry"s standard dummy text ever
           since the 1500s,
         </p>
         <Button className="h-[60px] min-w-[151px] rounded-full !bg-[#FA4A4A] p-[20px] uppercase font-medium text-[16px] text-white">

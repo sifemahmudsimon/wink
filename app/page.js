@@ -4,10 +4,12 @@ import SaleTimerBanner from "@/components/PageWiseComponent/HomePage/SaleTimerBa
 import NewsLetter from "@/components/PageWiseComponent/HomePage/NewsLetter";
 import FeaturedProducts from "@/components/PageWiseComponent/HomePage/FeaturedProducts";
 import ShopGallery from "@/components/PageWiseComponent/HomePage/ShopGallery";
-import FeatureVideo from "@/components/PageWiseComponent/HomePage/FeatureVideo";
-import OfferBanner from "@/components/PageWiseComponent/HomePage/OfferBanner";
 import ProductAvailablity from "@/components/PageWiseComponent/HomePage/ProductAvailablity";
 import OurStory from "@/components/PageWiseComponent/HomePage/OurStory";
+import SliderBanner from "@/components/PageWiseComponent/HomePage/SliderBanner";
+import FeatureSwiperVideo from "@/components/PageWiseComponent/HomePage/FeatureSwiperVideo";
+import ProductDisplay from "@/components/PageWiseComponent/HomePage/ProductDisplay";
+import NavBar from "@/components/Reuseable/NavBar";
 
 
 export default async function Home() {
@@ -16,12 +18,16 @@ export default async function Home() {
   console.log("console data", deviceDetails);
   return (
     <>
+    <NavBar/>
     <HeroBanner/>
     <SaleTimerBanner/>
-    <OfferBanner/>
+    <ProductDisplay theme={'light'} size={'sm'} gap={'17px'}/>
+    <SliderBanner/>
     <ProductAvailablity/>
+    <ProductDisplay theme={'light'} size={'lg'} gap={'24px'}/>
     <OurStory/>
-    <FeatureVideo/>
+    <ProductDisplay theme={'dark'} size={'lg'} gap={'24px'}/>
+    <FeatureSwiperVideo/>
     <FeaturedProducts/>
     <ShopGallery/>
     <NewsLetter/>

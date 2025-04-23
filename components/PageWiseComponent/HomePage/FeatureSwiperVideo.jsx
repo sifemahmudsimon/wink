@@ -1,7 +1,7 @@
 import { Button } from "@heroui/button"
 import React from "react"
 
-const FeatureVideo = () => {
+const FeatureSwiperVideo = () => {
   return (
     <div className="relative h-[549px] md:h-[min(1080px,_calc(100vh))] overflow-hidden">
     <video
@@ -44,4 +44,4 @@ const FeatureVideo = () => {
   )
 }
 
-export default FeatureVideo
+export default FeatureSwiperVideo

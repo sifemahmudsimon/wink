@@ -18,9 +18,9 @@ const NavBar = () => {
           FREE SHIPPING IN DHAKA
         </p>
       </div>
-      <div className="relative flex justify-center  h-[76px] z-40 mb-[-76px]">
+      <div className="relative flex justify-center  h-[72px] md:h-[76px] z-40 mb-[-72px] md:mb-[-76px]">
       <div className="flex absolute bottom-0 left-[48.85%] transform -translate-x-1/2">
-          <div className="flex justify-center items-center gap-[40px]  text-white leading-[100%] ">
+          <div className="hidden md:flex justify-center items-center gap-[40px]  text-white leading-[100%] ">
             {navlist.slice(0, 2).map((item, index) => (
               <Link href={item.link} key={index}>
                 {item.name}
@@ -36,7 +36,7 @@ const NavBar = () => {
             />
           </div>
 
-          <div className="flex justify-center items-center gap-[40px]  text-white leading-[100%] ">
+          <div className="hidden md:flex justify-center items-center gap-[40px]  text-white leading-[100%] ">
             {navlist.slice(2).map((item, index) => (
               <a href={item.link} key={index}>
                 {item.name}

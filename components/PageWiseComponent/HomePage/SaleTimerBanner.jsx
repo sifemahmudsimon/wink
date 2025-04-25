@@ -45,38 +45,38 @@ const SaleTimerBanner = () => {
 
   return (
     <div className='w-[100%] bg-black text-white  flex justify-center items-center'>
-      <div className='flex justify-between w-[100%] max-w-[1256px] mx-[16px] py-[95px]'>
-        <div>
-          <h1 className='text-[40px] leading-[100%] mb-[23px]'>Special Sale Offer</h1>
-          <p className='text-[20px] leading-[100%] mb-[36px]'>Hurry up! get 30% off entire order when you buy a pair of leggings!</p>
+      <div className='md:flex justify-between w-[100%] max-w-[1256px] mx-[16px] py-[32px] md:py-[95px]'>
+        <div className='px-[32px] md:px-0'>
+          <h2 className='font-bold md:font-normal text-[24px] md:text-[40px] leading-[100%] mb-[10px] md:mb-[23px]'>Special Sale Offer</h2>
+          <p className='text-[20px] leading-[100%] mb-[20px] md:mb-[36px]'>Hurry up! get 30% off entire order when you buy a pair of leggings!</p>
           <Button
-            className="h-[65px] min-w-[199px] border-1 rounded-full bg-none px-[48px] py-[22px]  uppercase font-bold text-[16px]"
+            className="hidden md:block h-[65px] min-w-[199px] border-1 rounded-full bg-none px-[48px] py-[22px]  uppercase font-bold text-[16px]"
             color="light"
             variant="bordered"
           >
             SHOP NOW
           </Button>
         </div>
-        <div className="flex gap-[30px] h-[64px] mt-[48px]">
+        <div className="flex justify-between gap-[30px] h-[64px] mt-[48px]">
             
             <div className='text-center border-r-[1px] border-[#FFFFFF80] pr-[20px]'>
-            <p className='font-bold text-[40px] leading-[100%] mb-[8px]'>{pad(time.days)}</p>
-            <p className='font-light text-[16px] leading-[100%]'>DAYS</p>
+            <p className='font-bold text-[28px] md:text-[40px] leading-[100%] mb-[8px]'>{pad(time.days)}</p>
+            <p className='font-light text-[12px] md:text-[16px] leading-[100%]'>DAYS</p>
             </div>
            
             <div className='text-center border-r-[1px] border-[#FFFFFF80] pr-[20px]'>
-            <p className='font-bold text-[40px] leading-[100%] mb-[8px]'> {pad(time.hours)}</p>
-            <p className='font-light text-[16px] leading-[100%]'>HOURS</p>
+            <p className='font-bold text-[28px] md:text-[40px] leading-[100%] mb-[8px]'> {pad(time.hours)}</p>
+            <p className='font-light text-[12px] md:text-[16px] leading-[100%]'>HOURS</p>
             </div>
             
             <div className='text-center border-r-[1px] border-[#FFFFFF80] pr-[20px]'>
-            <p className='font-bold text-[40px] leading-[100%] mb-[8px]'> {pad(time.minutes)}</p>
-            <p className='font-light text-[16px] leading-[100%]'>MINUTES</p>
+            <p className='font-bold text-[28px] md:text-[40px] leading-[100%] mb-[8px]'> {pad(time.minutes)}</p>
+            <p className='font-light text-[12px] md:text-[16px] leading-[100%]'>MINUTES</p>
             </div>
 
             <div className='text-center '>
-            <p className='font-bold text-[40px] leading-[100%] mb-[8px]'> {pad(time.seconds)}</p>
-            <p className='font-light text-[16px] leading-[100%]'>SECONDS</p>
+            <p className='font-bold text-[28px] md:text-[40px] leading-[100%] mb-[8px]'> {pad(time.seconds)}</p>
+            <p className='font-light text-[12px] md:text-[16px] leading-[100%]'>SECONDS</p>
             </div>
            
           </div>

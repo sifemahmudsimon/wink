@@ -8,7 +8,7 @@ const ShopGallery = () => {
       <SectionTitle 
       title='Shop All' 
       subtitle='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'/>
-      <div className="flex gap-[16px] justify-center w-[100%]">
+      <div className="flex flex-wrap gap-[16px] justify-center w-[100%]">
         {[...Array(4)].map((data, index) => (
           <div key={index} className="relative w-[302px] h-[445px]">
             <Image

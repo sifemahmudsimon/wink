@@ -3,7 +3,7 @@ import React from "react"
 
 const FeatureSwiperVideo = () => {
   return (
-    <div className="relative h-[549px] md:h-[min(1080px,_calc(100vh))] overflow-hidden">
+    <div className="relative h-[240px] md:h-[min(1080px,_calc(100vh))] overflow-hidden">
     <video
       width="100%"
       height="100%"
@@ -22,15 +22,15 @@ const FeatureSwiperVideo = () => {
     <div className="absolute top-0 left-0 w-full h-full 
     flex flex-col items-end justify-center 
     [background-image:linear-gradient(to_left,_#893302FA_0%,_#893302FA_30%,_rgba(0,0,0,0.27)_100%)] gap-[30px]">
-      <div className="w-[439px] text-white mr-[17.188%]">
+      <div className="md:w-[439px] text-white mx-[30px] md:mr-[17.188%] md:ml-0">
       <h1
         className="max-w-[338px] md:max-w-[930px] 
-   font-bold md:font-medium 
-  text-[24px] md:text-[47px] leading-[46px] md:leading-[100%] mb-[26px]"
+   font-bold md:font-medium 549
+  text-[24px] md:text-[47px] leading-[46px] md:leading-[100%] mb-[10px] md:mb-[26px]"
       >
         Perfect Fit Video 
       </h1>
-      <p className="leading-[19px]  mb-[38px]">Lorem Ipsum is simply dummy text of the printing the industry"s  standard dummy text ever since the 1500s,</p>
+      <p className="leading-[19px] mb-[20px]  md:mb-[38px]">Lorem Ipsum is simply dummy text of the printing the industry"s  standard dummy text ever since the 1500s,</p>
       <Button
             className="h-[60px] min-w-[151px] border-1 rounded-full bg-none p-[20px]  uppercase font-medium text-[16px]"
             color="light"

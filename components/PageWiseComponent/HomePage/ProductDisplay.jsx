@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import SectionTitle from "../ReuseableComponent/SectionTitle";
 import Image from "next/image";
@@ -13,17 +14,17 @@ const ProductDisplay = ({ theme, size, gap }) => {
   };
   return (
     <div
-      className={`w-full bg-${customtheme.bg} text-${customtheme.text}  pt-[56px] pb-[96px]`}
+      className={`w-full bg-${customtheme.bg} text-${customtheme.text}  py-[20px] md:pt-[56px] md:pb-[96px]`}
     >
       <SectionTitle
         title="Men's Boxer"
         subtitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been "
       />
-      <div className="overflow-x-auto whitespace-nowrap ">
+      <div className="overflow-x-auto">
         <div
-          className={`flex mb-[96px] ml-[16px]`}
+          className={`flex mb-[20px] md:mb-[96px] ml-[30px] md:ml-[16px]`}
           style={{
-            gap: customtheme.img_gap,
+            gap:window.innerWidth < 768 ? "30px" : customtheme.img_gap,
           }}
         >
           {[...Array(6)].map((data, index) => (
@@ -31,8 +32,8 @@ const ProductDisplay = ({ theme, size, gap }) => {
               <div
                 className="relative"
                 style={{
-                  minWidth: customtheme.img_width,
-                  height: customtheme.img_height,
+                  width: window.innerWidth < 768 ? "200px" : customtheme.img_width,
+                  height: window.innerWidth < 768 ? "300px" : customtheme.img_height,
                 }}
               >
                 <Image
@@ -43,11 +44,13 @@ const ProductDisplay = ({ theme, size, gap }) => {
                   alt={`Image`}
                 />
               </div>
-              <div className="text-center mt-[33px] ">
-                <h3 className="text-[26px] leading-[100%] mb-[24px]">
+              <div className="text-center mt-[10px] mb:mt-[33px]"
+             >
+
+                <h3 className="text-[18px] md:text-[26px] leading-[100%] mb-[8px] md:mb-[24px]">
                   Men's Boxer Black Space
                 </h3>
-                <p className="text-[19px] leading-[100%]">Tk 350</p>
+                <p className="text-[13.5px] md:text-[19px] leading-[100%]">Tk 350</p>
               </div>
             </div>
           ))}

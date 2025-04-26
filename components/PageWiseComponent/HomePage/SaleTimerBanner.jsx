@@ -57,7 +57,7 @@ const SaleTimerBanner = () => {
             SHOP NOW
           </Button>
         </div>
-        <div className="flex justify-between gap-[30px] h-[64px] mt-[48px]">
+        <div className="flex justify-between gap-[30px] h-[64px] max-w-[350px] md:max-w-none mx-auto md:mx-0 mt-[48px]">
             
             <div className='text-center border-r-[1px] border-[#FFFFFF80] pr-[20px]'>
             <p className='font-bold text-[28px] md:text-[40px] leading-[100%] mb-[8px]'>{pad(time.days)}</p>

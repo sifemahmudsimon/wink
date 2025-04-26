@@ -39,39 +39,34 @@ const SliderBanner = () => {
         }}
       >
         {img.map((data, index) => (
-         
-       
-             <SwiperSlide key={index}>
-              <motion.div
-             
-                initial={{ scale: 1 }}
-                animate={{
-                  scale: activeIndex === index ? 1.1 : 1, // Apply zoom only if it's the active slide
-                  opacity: activeIndex === index ? 1 : 0,
-                }}
-                transition={{
-                  scale: { duration: 6 },   // Slow transition for zoom
-    opacity: { duration: 0.5 }, // Fast transition for fade
-                }}
-                className="h-[549px] md:h-[min(1080px,_calc(100vh))] overflow-hidden bg-black"
-              >
-                <Image
-                  src={data.link}
-                  fill
-                  objectFit="cover"
-                  objectPosition="center"
-                  alt={`Image`}
-                />
-              </motion.div>
-            </SwiperSlide>
-    
-        
+          <SwiperSlide key={index}>
+            <motion.div
+              initial={{ scale: 1 }}
+              animate={{
+                scale: activeIndex === index ? 1.1 : 1, // Apply zoom only if it's the active slide
+                opacity: activeIndex === index ? 1 : 0,
+              }}
+              transition={{
+                scale: { duration: 6 }, // Slow transition for zoom
+                opacity: { duration: 0.5 }, // Fast transition for fade
+              }}
+              className="h-[549px] md:h-[min(1080px,_calc(100vh))] overflow-hidden bg-black"
+            >
+              <Image
+                src={data.link}
+                fill
+                objectFit="cover"
+                objectPosition="center"
+                alt={`Image`}
+              />
+            </motion.div>
+          </SwiperSlide>
         ))}
       </Swiper>
 
       <div
         className="absolute top-0 left-0 w-full h-full 
-        flex flex-col items-center justify-center 
+        flex flex-col items-center justify-center px-[16px] 
         bg-gradient-to-t from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.51)] text-white z-10"
       >
         <h1
